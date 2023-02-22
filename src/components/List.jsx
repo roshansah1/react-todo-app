@@ -7,8 +7,9 @@ const List = ({setInput, setText, setNum , setToggle, text, setVal}) => {
 
     const del = (id) => {
        let newList = text.filter((ele) => {
-          return  id !== ele.id
+          return  id !== ele.id 
         })
+      setNum(0)
       setText(newList)
     }
 
@@ -27,7 +28,7 @@ const List = ({setInput, setText, setNum , setToggle, text, setVal}) => {
         <>
          <div className="list">
          {text.map((ele, indx) => {
-          setNum(indx +1)
+          setNum(text.length)
           return <div className="list_box" key={indx}> 
           <p> {ele.input} </p>
           <div className="buttons">
