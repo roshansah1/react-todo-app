@@ -32,8 +32,8 @@ const List = ({setInput, setText, setNum , setToggle, text, setVal}) => {
           return <div className="list_box" key={indx}> 
           <p> {ele.input} </p>
           <div className="buttons">
-          <Button id="button" variant="contained" color="success" onClick={() => edit(ele.id)}><ModeEditIcon /></Button>
-          <Button id="button" variant="contained" color="error"  onClick={() => del(ele.id) }><DeleteIcon /></Button>
+          <Button id="button" title="Edit task" variant="contained" color="success" onClick={() => edit(ele.id)}><ModeEditIcon /></Button>
+          <Button id="button" title="Delete task" variant="contained" color="error"  onClick={() => del(ele.id) }><DeleteIcon /></Button>
           </div>
           </div>
          })}

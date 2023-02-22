@@ -42,8 +42,8 @@ const Input = ({input, setInput, text ,setText , toggle, val, setToggle}) => {
         <>
            <div className="input-button">
            <input type="text" value={input}  onChange={change} onKeyPress={add} placeholder="Add your new todo" />
-            {toggle == true ? <Button id="button" variant="contained" color="success" onClick={() => click()}><AddIcon className="icon" /></Button> : 
-            <Button id="button" variant="contained" color="success" onClick={() => click()}><ModeEditIcon className="icon" /></Button>}
+            {toggle == true ? <Button id="button" title="Add task" variant="contained" color="success" onClick={() => click()}><AddIcon className="icon" /></Button> : 
+            <Button id="button" title="Update task" variant="contained" color="success" onClick={() => click()}><ModeEditIcon className="icon" /></Button>}
            </div>
         </>
     )

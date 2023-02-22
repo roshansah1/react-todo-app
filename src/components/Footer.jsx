@@ -13,7 +13,7 @@ const Footer = ({num, setText, setNum}) => {
         <>
         <div className="footer">
         <p> You have pending <strong> {num} </strong>tasks </p>
-        <Button id="button" variant="contained" color="success" onClick={click}>Clear All</Button>
+        <Button id="button" title="Remove all" variant="contained" color="success" onClick={click}>Clear All</Button>
             </div>
         </>
     )
