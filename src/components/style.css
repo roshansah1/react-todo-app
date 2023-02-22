@@ -1,0 +1,66 @@
+.container{
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    height: 40rem;
+    background-color: #fff;
+    overflow-y: scroll;
+    margin:1rem 0;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+input{
+    width: 19rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.input-button{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0rem 1.5rem 1rem;
+}
+
+#button{
+    margin-left: 0.4rem;
+    padding: 0.4rem;
+    min-width: 50px;
+    border-radius: 5px;
+}
+
+.icon{
+    font-size: xx-large !important;
+}
+
+.list{
+    margin-top: 1rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+@media only screen and (max-width: 600px){
+    .container{
+        margin: 1rem;
+    }
+    html{
+        font-size: 14px;
+    }
+}
